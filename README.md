@@ -5,6 +5,10 @@ that you can send to a loved one.
 
 This project was made so that I could play with Sammy.js as well as to remember how to use mongodb with node.
 
+### Demo
+[![Valentines eCard Demo](https://i.imgur.com/zXHxvuT.png)](https://www.youtube.com/watch?v=EO6dMueWUvs)
+
+
 ### Installation Guide
 To install [Express](https://expressjs.com/)
 

@@ -19,16 +19,16 @@ app.get('/create', function(req, res){
   MongoClient.connect(url, function(err, db) {
     assert.equal(null, err);
     console.log("Connected correctly to server.");
-    db.createCollection('love', function(err, res){
+    db.createCollection('love', function(err, createResult){
       assert.equal(null, err);
       var quotes = [
         {quote: 'I swear I couldn\'t love you more than I do right now, and yet I know I will tomorrow', id: 1},
         {quote: 'You are my best friend, my human diary and my other half. You mean the world to me and I LOVE YOU.', id: 2},
         {quote: 'I choose you. And I\'ll choose you over and over and over. Without pause, without a doubt, in a heartbeat. I\'ll keep choosing you.', id: 3}
       ];
-      db.collection('love').insertMany(quotes, function(err, res){
+      db.collection('love').insertMany(quotes, function(err, insertResult){
         assert.equal(null, err);
-        console.log("Number of documents inserted: " + res.insertedCount);
+        res.send("Number of documents inserted: " + insertResult.insertedCount);
         db.close();
       });
     });

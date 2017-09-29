@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="sunset">
+    <div id="main" class="container">
+      <div class="row justify-content-center align-items-center full">
+        <div id="nameCard" class="col-md-8 col-xs-12 none">
+          <div class="card text-white bg-danger pad">
+            <h3 id="name1"></h3>
+            <h3 id="name2"></h3>
+            <blockquote class="blockquote text">
+              <p id="quote" class="mb-0"></p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div id="info" class="col-md-6 col-xs-10 none">
+          <div class="card card-inverse bg-warning pad">
+            <div class="card-block">
+              <h3 class="card-title align-self-center">Valentines E-cards</h3>
+              <p>This webapp was made to easily create and send valentines day gift cards to someone you love.</p>
+              <form>
+                <div class="form-group">
+                  <label for="from">From: </label>
+                  <input type="text" class="form-control" id="from" placeholder="You">
+                </div>
+                <div class="form-group">
+                  <label for="to">To: </label>
+                  <input type="text" class="form-control" id="to" placeholder="Them">
+                </div>
+              </form>
+              <button id="submit" class="btn btn-primary">Create</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/sammy.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

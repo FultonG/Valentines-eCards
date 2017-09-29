@@ -1,0 +1,18 @@
+.none {
+  display: none;
+}
+
+.full{
+  height: 100vh;
+}
+
+.sunset {
+  background-image: url('/img/sunset.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pad {
+  padding: 0.75em;
+}
